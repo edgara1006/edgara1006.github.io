@@ -1,0 +1,136 @@
+<html>
+<head>
+<title>Kitten Site</title>
+<!---Link to the other parts of the project-->
+<script src="catsProjact.js"></script>
+<link href="catsProject.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="SiteName">
+    <h1>The Cat Site</h1>
+</div>
+
+<div class="container">
+<!--Link to cat API used-->
+<a href="http://thecatapi.com"><img src="http://thecatapi.com/api/images/get?format=src&type=gif" style="width:100%;"></a>
+
+<p>want a kitten gif? :3 refresh the page for a new gif</p>
+</div>
+
+<div class="text">
+    <h2>Kitten Facts</h2>
+<p>
+<br>#1 – Kittens Can’t See & Hear Fully Until 2-3 Weeks Old
+<br>#2 – Kittens Sleep Around 18 Hours Per Day
+<br>#3 – Kittens Can Be Right or Left-Pawed   
+<br>#4 – Kittens Have 26 Teeth
+<br>#5 – The Average Kitten Litter is 1-9 Kittens
+</p>
+<br>
+<h2>kitten info</h2>
+<br>
+<p>
+    A kitten, also known as a kitty or kitty cat,
+     is a juvenile cat. After being born, kittens are totally dependent on their mother for survival and they do not normally
+     open their eyes until after seven to ten days. After about two weeks, kittens quickly 
+     develop and begin to explore the world outside the nest.
+</p>
+<h2>origins of word</h2>
+<p>
+The word "kitten" derives from the Middle English word kitoun, 
+which in turn came from the Old French chitoun or cheton. Juvenile big cats are called "cubs" rather than kittens; either term may be used for the young of 
+smaller wild felids, such as ocelots, caracals and lynx, but "kitten" is usually more common for these species.
+</p>    
+
+</div>
+
+
+  
+    <div id="map"></div>
+    <script>
+      // Note: This example requires that you consent to location sharing when
+      // prompted by your browser. If you see the error "The Geolocation service
+      // failed.", it means you probably did not give permission for the browser to
+      // locate you.
+      var map, infoWindow;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 6
+        });
+        infoWindow = new google.maps.InfoWindow;
+
+        // Try HTML5 geolocation.
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('Youre a cat on a map now :3 (=^･ｪ･^=))ﾉ彡☆');
+            infoWindow.open(map);
+            map.setCenter(pos);
+          }, function() {
+            handleLocationError(true, infoWindow, map.getCenter());
+          });
+        } else {
+          // Browser doesn't support Geolocation
+          handleLocationError(false, infoWindow, map.getCenter());
+        }
+      }
+
+      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+                              'Error: The Geolocation service failed.' :
+                              'Error: Your browser doesn\'t support geolocation.');
+        infoWindow.open(map);
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4cgT3nvyAVmr4ALL-RCRLFBXBzTa0_e0&callback=initMap">
+    </script>
+
+
+ 
+<div class="Sources">
+
+</div>
+
+<div class="text">
+    <h2>first weeks for kitten</h2>
+    <p>During the first few weeks of life, a kitten’s primary concerns are feeding, keeping warm, 
+        developing social skills and learning how to excrete on his own. In most cases, humans will simply 
+        watch the mother cat perform her duties. However, if the kitten in your care has been separated from his mother 
+        or if the mother cat has rejected her young or cannot produce enough milk, caring for him is up to you.
+    </p>
+<br>
+<h2>How Do I Feed a Newborn Kitten?</h2>
+<p>A mother cat’s milk provides everything a kitten needs during th
+e first four weeks of life. If you have newborn kittens who’ve been separated from 
+their mother, consult with a veterinarian, shelter or experienced foster care giver who can help you find a new mother 
+cat with a small litter-she may be able to nurse the orphaned babies. If you cannot find a foster mother, please consult with your
+ veterinarian about the proper way to bottle-feed with a commercial milk replacer. Please do not offer regular cow’s milk to cats of any age. It 
+ is not easily digestible and can cause diarrhea.
+</p>
+<br>
+<h2>What Do Kittens Eat Besides Milk?</h2>
+<p>When the orphaned kittens are three to four weeks old, begin to offer milk replacer in a shallow bowl, 
+    then introduce a moist, easily chewable diet. You can make gruel from warmed milk replacer and a high-quality dry 
+    or canned kitten food. Serve it in a shallow bowl and feed the kittens several times each day. By five weeks old, 
+    they should be getting used to their new diet. By six to seven weeks old, they should be able to chew dry food and you’ll 
+    no longer need to moisten it. Kittens are typically fully weaned by around eight weeks of age.</p>
+</div>
+
+<div class="gridbox gridfooter">
+<div class="footer">
+<p>This website was made by Edgar Alejandro.</p>
+            </div>
+</div>
+
+</body>
+</html>

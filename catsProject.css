@@ -1,0 +1,65 @@
+.container{
+    text-align: center;
+    padding: 60px;
+    display: block;
+	margin: auto;
+	position: relative;
+	width: 50%;
+    background-color:lightblue; 
+}
+.text{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+background-color: lightblue;
+padding: 60px;
+border: 400px;
+ -webkit-columns: 100px 3; /* Chrome, Safari, Opera */
+    -moz-columns: 100px 3; /* Firefox */
+    columns: 100px 3;
+    padding: 30px;
+}
+
+@media screen and (min-width: 480px) {
+    body {
+        background: url(https://i.pinimg.com/736x/36/53/6c/36536cfc43524f5a7abc414ac4b12d92--cat-pattern-wallpaper-iphone-wallpaper-cat.jpg);
+        background-image: url(https://i.pinimg.com/736x/36/53/6c/36536cfc43524f5a7abc414ac4b12d92--cat-pattern-wallpaper-iphone-wallpaper-cat.jpg);
+         border-left: 300px;
+    border-right: 600px;
+    }
+    .map{
+        padding: 60px;
+        width: 480px;
+    }
+}
+  #map {
+        height: 400px;
+        width: 100%;
+       }
+
+.footer {
+    padding: 1.0121457489878542510121457489879%;
+    text-align: center;
+    background-color: #f1f1f1;
+    border: 1px solid #e9e9e9;
+    font-size: 0.625em;
+}
+.gridfooter {
+    width: 100%;
+    margin-bottom: 0;
+}
+@media only screen and (max-width: 500px){
+    .gridbox {
+        margin-right: 0;
+        float: left;
+    }
+}
+.map{
+    align-content: center;
+   
+}
+
+.SiteName{
+    text-align: center;
+    font-family: Impact;
+    font-size: 20px;
+}
